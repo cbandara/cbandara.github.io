@@ -1,0 +1,1526 @@
+/** ************************* **/
+/** Froont widget base styles **/
+/** ************************* **/
+.fr-widget h1,
+.fr-widget h2,
+.fr-widget h3,
+.fr-widget h4,
+.fr-widget h5,
+.fr-widget h6,
+.fr-widget p {
+  margin: 0;
+}
+html,
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "PT Sans", Tahoma, Verdana, sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+.b-content {
+  font-size: 1.6em;
+  padding-top: 0.02px;
+  min-height: 100%;
+  margin: 0 auto -50px;
+  /* the bottom margin is the negative value of the footer's height */
+  padding-bottom: 50px;
+}
+.b-content.loading {
+  opacity: 0;
+}
+.b-content:after {
+  content: ".";
+  display: none;
+  clear: both;
+  line-height: 0;
+  height: 0;
+}
+.b-content.not-in-preview {
+  padding-bottom: 0;
+}
+a {
+  color: #000;
+  text-decoration: underline;
+}
+.fr-wf {
+  -webkit-transition: opacity .1s linear;
+  -moz-transition: opacity .1s linear;
+  -o-transition: opacity .1s linear;
+  transition: opacity .1s linear;
+  word-break: break-word;
+}
+.wf-loading .fr-wf {
+  opacity: 0 !important;
+}
+.wf-inactive .fr-wf,
+.wf-active .fr-wf {
+  opacity: 1;
+}
+.fr-widget:after,
+.fr-widget:before {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.fr-widget {
+  display: block;
+}
+.fr-text * {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  text-decoration: inherit;
+}
+.fr-link {
+  text-decoration: none;
+}
+.fr-text i {
+  font-style: italic;
+}
+.fr-text u {
+  text-decoration: underline;
+}
+.fr-text del,
+.fr-text s,
+.fr-text strike {
+  text-decoration: line-through;
+}
+.fr-text b,
+.fr-text strong,
+.fr-text h1,
+.fr-text h2,
+.fr-text h3,
+.fr-text h4,
+.fr-text h5,
+.fr-text h6 {
+  font-weight: bold;
+}
+.fr-img {
+  line-height: 0;
+}
+.fr-img img {
+  width: 100%;
+  max-width: 100%;
+}
+.fr-svg svg {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+.fr-svg-inner svg {
+  position: absolute;
+  display: block;
+}
+.fr-grid > .fr-widget {
+  float: left;
+}
+.fr-video-inner {
+  position: relative;
+}
+.fr-video-inner iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.fr_hover-animation {
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: background, color, border-radius;
+  -moz-transition-property: background, color, border-radius;
+  -o-transition-property: background, color, border-radius;
+  transition-property: background, color, border-radius;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+.fr-video-inner p {
+  display: none;
+}
+.fr-widget-hover-opacity-60:hover {
+  opacity: 0.6;
+}
+.fr-widget-hover-scale-up:hover {
+  transform: scale(1.1);
+}
+.fr-copyright-footer {
+  bottom: 0;
+  width: 100%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+}
+.fr-copyright-footer.fixed {
+  position: fixed;
+  left: 0;
+}
+.fr-copyright-footer > .fr-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #242424;
+}
+.fr-copyright-footer .fr-made-with-froont {
+  width: auto;
+  font-family: Arial;
+  font-size: .55rem;
+  text-align: center;
+  letter-spacing: .14rem;
+  margin: 0 auto;
+  padding: 1.05rem 0 0.5rem 0;
+  color: #979797;
+}
+.fr-copyright-footer .fr-made-with-froont .fr-text {
+  min-width: 100%;
+}
+.fr-copyright-footer .fr-made-with-froont .fr-text .heart {
+  font-size: .8rem;
+}
+.fr-copyright-footer .fr-bottom-em-spacer {
+  height: 0.8rem;
+  background: #242424;
+}
+.fr-fork-on-froont {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 115px;
+  height: 115px;
+  background-image: url('//froont.com/_static/images/fork-ribbon.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 10000;
+}
+.fr-fork-on-froont:hover {
+  background-position: 0 -115px;
+}
+
+/** ******************************** **/
+/** End of Froont widget base styles **/
+/** ******************************** **/
+
+/** ************************* **/
+/** Widget styles             **/
+/** ************************* **/
+.fr_dehohu {
+  display: block;
+  width: auto;
+  font-family: Open Sans;
+  font-size: .9em;
+  text-align: center;
+  letter-spacing: .3em;
+  margin-top: .61em;
+  margin-right: auto;
+  margin-bottom: 3em;
+  margin-left: 0;
+  color: #848d90
+}
+.fr_dehohu .fr-text {
+  min-width: 100%
+}
+.fr_pohehi {
+  display: block;
+  width: auto;
+  font-family: Open Sans;
+  font-size: 1.6em;
+  text-align: center;
+  letter-spacing: .2em;
+  margin-top: 1.67em;
+  margin-right: auto;
+  margin-bottom: .3em;
+  margin-left: 0
+}
+.fr_pohehi .fr-text {
+  min-width: 100%
+}
+.fr_boguba {
+  float: none;
+  display: block;
+  width: 300px;
+  vertical-align: top;
+  margin-top: 3.79em;
+  margin-right: auto;
+  margin-left: auto
+}
+body {
+  background: white
+}
+.fr_bonuga {
+  margin-top: 38.88em;
+  margin-left: 35.96%
+}
+.fr_bomofo {
+  margin-top: 38.88em;
+  margin-left: 7.96%
+}
+.fr_solohe {
+  margin-top: 38.85em;
+  margin-left: 115.22%
+}
+.fr_rolaso {
+  margin-top: 42.69em;
+  margin-left: 355.38%
+}
+.fr_jomago {
+  margin-top: 38.22em;
+  margin-left: 6.87%
+}
+.fr_gepage {
+  margin-top: 42.69em;
+  margin-left: 30.64%
+}
+.fr_cufuju {
+  margin-top: 38.88em;
+  margin-left: 81.95%
+}
+.fr_jeroma {
+  margin-top: 42.73em;
+  margin-left: 48.7%
+}
+.fr_heceje {
+  margin-top: 74.18em;
+  margin-left: 1660.39%
+}
+.fr_bigodu {
+  margin-top: 74.18em;
+  margin-left: 1764.37%
+}
+.fr_sehole {
+  margin-top: 74.06em;
+  margin-left: 190.44%
+}
+.fr_lesipu {
+  margin-top: 86.24em;
+  margin-left: 163.88%
+}
+.fr_kowatu {
+  margin-top: 39.48em;
+  margin-left: 158.89%
+}
+.fr_wegabi {
+  margin-top: 74.12em;
+  margin-left: 808.95%
+}
+.fr_jedohe {
+  margin-top: 74.12em;
+  margin-left: 859.95%
+}
+.fr_gijiwa {
+  margin-top: 55.83em;
+  margin-left: 82.28%
+}
+.fr_nebimu {
+  margin-top: 74.18em;
+  margin-left: 1063.63%
+}
+.fr_donefu {
+  margin-top: 74.06em;
+  margin-left: 78.52%
+}
+.fr_wirari {
+  margin-top: 55.83em;
+  margin-left: 49.29%
+}
+.fr_linosu {
+  margin-top: 74.12em;
+  margin-left: 516.38%
+}
+.fr_guruko {
+  margin-top: 28.34em
+}
+.fr_lowece {
+  margin-top: 74.18em;
+  margin-left: 1167.37%
+}
+.fr_worigi {
+  margin-top: 55.89em;
+  margin-left: 182.24%
+}
+.fr_hurodu {
+  margin-top: 74.12em;
+  margin-left: 567.25%
+}
+.fr_kojuwo {
+  margin-top: 55.83em;
+  margin-left: 15.3%
+}
+.fr_rucaji {
+  margin-top: 86.24em;
+  margin-left: 52.8%
+}
+.fr_casede {
+  margin-top: 55.89em;
+  margin-left: 71.99%
+}
+.fr_sejike {
+  margin-top: 74.12em;
+  margin-left: 254.99%
+}
+.fr_nediso {
+  margin-top: 74.12em;
+  margin-left: 204.02%
+}
+.fr_mosugi {
+  margin-top: 55.17em;
+  margin-left: 11.72%
+}
+.fr_winava {
+  margin-top: 39.48em;
+  margin-left: 47.8%
+}
+.fr_magero {
+  margin-top: 86.24em;
+  margin-left: 262.02%
+}
+.fr_tujumo {
+  margin-top: 74.06em;
+  margin-left: 289.11%
+}
+.fr_nolise {
+  margin-top: 12.11em
+}
+.fr_tomole {
+  margin-top: 55.89em;
+  margin-left: 281.22%
+}
+.fr_wujome {
+  margin-top: 39.48em;
+  margin-left: 257.02%
+}
+.fr_galisa {
+  margin-top: 13.96em;
+  margin-left: 48.92%
+}
+.fr_nabata {
+  margin-top: 40em;
+  margin-left: 168.09%
+}
+.fr_fodude {
+  margin-top: 68.43em;
+  margin-left: 666.46%;
+  position: absolute
+}
+.fr_hutino {
+  margin-top: 47.61em;
+  margin-left: 48.92%
+}
+.fr_bocumo {
+  margin-top: 42.69em;
+  margin-left: 24.73%
+}
+.fr_caruwu {
+  margin-top: 39.34em;
+  margin-left: 9.35%
+}
+.fr_tufisa {
+  margin-top: 40em;
+  margin-left: 70.08%
+}
+.fr_ronate {
+  margin-top: 43.12em;
+  margin-left: 172.5%;
+  position: absolute
+}
+.fr_rofilo {
+  margin-top: 43.12em;
+  margin-left: 384.26%;
+  position: absolute
+}
+.fr_hifoto {
+  margin-top: 40em;
+  margin-left: 19.08%
+}
+.fr_benita {
+  margin-top: 40em;
+  margin-left: 63.98%
+}
+.fr_lokoka {
+  margin-top: 42.67em;
+  margin-left: 19.29%
+}
+.fr_kowabi {
+  margin-top: 49.02em;
+  margin-left: 88.38%
+}
+.fr_dovegi {
+  margin-top: 49.02em;
+  margin-left: 138.38%
+}
+.fr_lavibu {
+  margin-top: 44.55em;
+  margin-left: 91.42%
+}
+.fr_wukahu {
+  margin-top: 43.77em;
+  margin-left: 79.77%;
+  position: absolute
+}
+.fr_fipune {
+  margin-top: 44.49em;
+  margin-left: 31.4%;
+  position: absolute
+}
+.fr_nisapu {
+  margin-top: 33.36em;
+  margin-left: 42.73%
+}
+.fr_pewiru {
+  margin-top: 25.92em;
+  margin-left: 21.08%
+}
+.fr_mosovi {
+  margin-top: 56.71em;
+  margin-left: 11.72%
+}
+.fr_rebabe {
+  margin-top: 29.25em
+}
+.fr_pajasi {
+  margin-top: 12.54em
+}
+.fr_riretu {
+  margin-top: 75.6em;
+  margin-left: 78.52%
+}
+.fr_cilifo {
+  margin-top: 75.72em;
+  margin-left: 1063.63%
+}
+.fr_savece {
+  margin-top: 75.72em;
+  margin-left: 532.78%
+}
+.fr_modefu {
+  margin-top: 75.66em;
+  margin-left: 204.02%
+}
+.fr_bedasu {
+  margin-top: 75.66em;
+  margin-left: 254.99%
+}
+.fr_tebugi {
+  margin-top: 57.44em;
+  margin-left: 71.99%
+}
+.fr_macupi {
+  margin-top: 75.72em;
+  margin-left: 428.98%
+}
+.fr_tutiwo {
+  margin-top: 40.4em;
+  margin-left: 47.8%
+}
+.fr_nimeju {
+  margin-top: 88.14em;
+  margin-left: 52.8%
+}
+.fr_dimoju {
+  margin-top: 75.72em;
+  margin-left: 1660.39%
+}
+.fr_tehomi {
+  margin-top: 75.6em;
+  margin-left: 190.44%
+}
+.fr_kemete {
+  margin-top: 88.14em;
+  margin-left: 163.88%
+}
+.fr_kaseto {
+  margin-top: 75.72em;
+  margin-left: 1167.37%
+}
+.fr_cumadu {
+  margin-top: 75.72em;
+  margin-left: 1764.37%
+}
+.fr_delido {
+  margin-top: 75.66em;
+  margin-left: 808.95%
+}
+.fr_tupogi {
+  margin-top: 75.66em;
+  margin-left: 859.95%
+}
+.fr_gokuru {
+  margin-top: 75.66em;
+  margin-left: 567.25%
+}
+.fr_canupo {
+  margin-top: 75.66em;
+  margin-left: 516.38%
+}
+.fr_kuwimu {
+  margin-top: 57.44em;
+  margin-left: 182.24%
+}
+.fr_casege {
+  margin-top: 40.4em;
+  margin-left: 158.89%
+}
+.fr_birufu {
+  margin-top: 75.6em;
+  margin-left: 289.11%
+}
+.fr_rewona {
+  margin-top: 57.37em;
+  margin-left: 15.3%
+}
+.fr_kipabo {
+  margin-top: 88.14em;
+  margin-left: 262.02%
+}
+.fr_vatota {
+  margin-top: 40.4em;
+  margin-left: 257.02%
+}
+.fr_vafiwo {
+  margin-top: 57.44em;
+  margin-left: 281.22%
+}
+.fr_renubo {
+  margin-top: 57.37em;
+  margin-left: 49.29%
+}
+.fr_dofijo {
+  margin-top: 57.37em;
+  margin-left: 82.28%
+}
+.fr_ruhoku {
+  float: none;
+  display: block;
+  width: 18.53411962931761%;
+  vertical-align: top;
+  margin-top: -1.39em;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  padding-top: 1px;
+  min-height: 3.8515625em;
+  max-width: 980px
+}
+.fr_ruhoku>.fr-widget:nth-child(2n+1) {
+  margin-top: .6em;
+  margin-right: 1%;
+  margin-bottom: .6em;
+  margin-left: 1%;
+  width: 48%;
+  clear: left;
+  max-width: inherit
+}
+.fr_ruhoku>.fr-widget:nth-child(2n+2) {
+  margin-top: .6em;
+  margin-right: 1%;
+  margin-bottom: .6em;
+  margin-left: 1%;
+  width: 48%;
+  clear: none;
+  max-width: inherit
+}
+.fr_relibe {
+  margin-top: 33.15em;
+  margin-left: 282.28%
+}
+.fr_bojawi {
+  margin-top: 25.79em;
+  margin-left: 259.96%
+}
+.fr_mipevo {
+  margin-top: 25.83em;
+  margin-left: 259.96%
+}
+.fr_vifaku {
+  float: none;
+  display: block;
+  width: 47.16981132075472%;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 1em;
+  margin-left: auto;
+  max-width: 150px;
+  fill: #55ACEE
+}
+.fr_sawobo {
+  margin-top: 33.15em;
+  margin-left: 285.54%
+}
+.fr_gujoja {
+  margin-top: 58.58em;
+  margin-left: 264.96%
+}
+.fr_jeguro {
+  width: 31.332908163265305%;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  padding-top: 1px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  min-height: 4.318359375em
+}
+.fr_picevu {
+  margin-top: 36.15em;
+  margin-left: 498.89%
+}
+.fr_sodira {
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  padding-top: 1px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  min-height: 4.318359375em
+}
+.fr_wejuco {
+  float: none;
+  display: block;
+  width: 47.16981132075472%;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 1em;
+  margin-left: auto;
+  max-width: 150px;
+  fill: #0976B4
+}
+.fr_wejuco .fr-svg-inner {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 100%;
+  padding-left: 0;
+  position: relative
+}
+.fr_vifaku .fr-svg-inner {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 100%;
+  padding-left: 0;
+  position: relative
+}
+.fr_loloku {
+  float: none;
+  display: block;
+  width: 90%;
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: .75em;
+  line-height: 1.6em;
+  text-align: center;
+  letter-spacing: .1em;
+  vertical-align: top;
+  margin-top: -4.85em;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 1.5em;
+  padding-right: 1em;
+  padding-bottom: 1.5em;
+  padding-left: 1em;
+  color: white;
+  border: 1px solid #e34d35;
+  max-width: 240px;
+  border-radius: 4px
+}
+.fr_loloku .fr-text {
+  min-width: 100%
+}
+.fr_vutico {
+  float: none;
+  display: block;
+  width: 100%;
+  font-family: Oxygen;
+  font-weight: 400;
+  font-size: 3.65em;
+  line-height: 1.25em;
+  text-align: center;
+  vertical-align: top;
+  margin-top: -1.68em;
+  margin-right: auto;
+  margin-bottom: 1em;
+  margin-left: auto;
+  color: white;
+  min-height: 2em
+}
+.fr_vutico .fr-text {
+  min-width: 100%
+}
+.fr_sijeda {
+  float: none;
+  display: block;
+  width: 100%;
+  height: 20em;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 8em;
+  padding-bottom: 8em;
+  background-color: #141c26;
+  min-height: 21.1875em
+}
+.fr_naniji {
+  float: none;
+  display: block;
+  width: auto;
+  font-family: Open Sans;
+  font-size: .9em;
+  text-align: center;
+  letter-spacing: .3em;
+  margin-top: 4.18em;
+  margin-right: auto;
+  margin-bottom: 3em;
+  margin-left: auto;
+  color: #848d90
+}
+.fr_naniji .fr-text {
+  min-width: 100%
+}
+.fr_nigogi {
+  margin-top: 4.68em;
+  margin-left: 98.38%
+}
+.fr_betajo {
+  margin-top: 53.79em;
+  margin-left: .1%
+}
+.fr_nawapu {
+  float: none;
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-bottom: 3em;
+  margin-left: auto;
+  max-width: 80px;
+  fill: white
+}
+.fr_litule {
+  margin-top: 4.68em;
+  margin-left: 132.7%
+}
+.fr_woluho {
+  margin-top: 4.68em;
+  margin-left: 166.03%
+}
+.fr_cupaba {
+  margin-top: 1.93em;
+  margin-left: 52.29%
+}
+.fr_neloko {
+  margin-top: 1.93em;
+  margin-left: 1.29%
+}
+.fr_wefofo {
+  margin-top: 1.93em;
+  margin-left: 27.29%
+}
+.fr_biwoba {
+  margin-top: 1.93em;
+  margin-left: 77.29%
+}
+.fr_nawapu .fr-svg-inner {
+  padding-bottom: 114.21232876712331%;
+  position: relative
+}
+.fr_ludoji {
+  float: none;
+  display: block;
+  width: 100%;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 2em;
+  background-color: white;
+  position: relative;
+  min-height: 34.5625em
+}
+.fr_wetelu {
+  margin-top: 82.81em;
+  margin-left: 42.84%
+}
+.fr_sigibe {
+  margin-top: 49.94em;
+  margin-left: 12.09%
+}
+.fr_tocofe {
+  margin-top: 21.03em;
+  margin-left: 15.94%
+}
+.fr_kedobu {
+  margin-top: 56.79em;
+  margin-left: 15.94%
+}
+.fr_tujevo {
+  margin-top: 45.48em;
+  margin-left: 35.79%
+}
+.fr_darane {
+  margin-top: 56.85em;
+  margin-left: 160.12%
+}
+.fr_dicupe {
+  margin-top: 56.79em;
+  margin-left: 71.34%
+}
+.fr_rabawa {
+  margin-top: 56.72em;
+  margin-left: 15.94%
+}
+.fr_nafuhi {
+  float: none;
+  display: block;
+  width: 12.64363942069975%;
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: .8em;
+  text-align: center;
+  letter-spacing: .05em;
+  margin-top: .91em;
+  margin-right: auto;
+  margin-bottom: 3em;
+  margin-left: auto;
+  padding-top: 1em;
+  padding-right: .7em;
+  padding-bottom: 1em;
+  padding-left: .7em;
+  color: black;
+  border: 1px solid BLACK;
+  min-height: 1.35em;
+  max-width: 170px
+}
+.fr_nafuhi .fr-text {
+  min-width: 100%
+}
+.fr_feheji {
+  float: none;
+  display: block
+}
+.fr_kufena {
+  float: none;
+  display: block
+}
+.fr_fasaja {
+  display: block;
+  padding-top: 1px;
+  max-width: 400px
+}
+.fr_fasaja>.fr-widget:nth-child(2n+1) {
+  margin-top: .3em;
+  margin-right: .5%;
+  margin-bottom: .3em;
+  margin-left: 0;
+  width: 9.5%;
+  clear: left;
+  max-width: inherit
+}
+.fr_fasaja>.fr-widget:nth-child(2n+2) {
+  margin-top: .3em;
+  margin-right: 0;
+  margin-bottom: .3em;
+  margin-left: .5%;
+  width: 89.5%;
+  clear: none;
+  max-width: inherit
+}
+.fr_luwevu {
+  width: 17px;
+  fill: red
+}
+.fr_luwevu .fr-svg-inner {
+  padding-bottom: 91.80555555555556%;
+  position: relative
+}
+.fr_ticuta {
+  float: none;
+  display: block
+}
+.fr_puhasa {
+  margin-left: 53.3%;
+  padding-top: 1px
+}
+.fr_redimi {
+  float: none;
+  display: block;
+  width: 100%;
+  vertical-align: top;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 1px;
+  min-height: 15.375em;
+  max-width: 1000px
+}
+.fr_redimi>.fr-widget:nth-child(2n+1) {
+  margin-top: 0;
+  margin-right: 5.2%;
+  margin-bottom: 0;
+  margin-left: 0;
+  width: 53.8%;
+  clear: left;
+  max-width: inherit
+}
+.fr_redimi>.fr-widget:nth-child(2n+2) {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 5.2%;
+  width: 35.8%;
+  clear: none;
+  max-width: inherit
+}
+.fr_mopupu {
+  float: none;
+  display: block;
+  width: 90%;
+  margin-top: -3.75em;
+  margin-right: auto;
+  margin-left: 4.94%;
+  max-width: 1200px
+}
+.fr_remehe {
+  width: 17px;
+  fill: red
+}
+.fr_remehe .fr-svg-inner {
+  padding-bottom: 91.80555555555556%;
+  position: relative
+}
+.fr_wepebe {
+  margin-left: 53.3%;
+  padding-top: 1px
+}
+.fr_vomova {
+  float: none;
+  display: block;
+  width: 100%;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 1.7em;
+  text-align: left;
+  letter-spacing: .05em;
+  margin-right: auto;
+  margin-bottom: 1em;
+  margin-left: auto;
+  color: #292c31
+}
+.fr_vomova .fr-text {
+  min-width: 100%
+}
+.fr_nelaku {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  background-color: white;
+  min-height: 2em
+}
+.fr_mufuvi {
+  width: 17px;
+  fill: red
+}
+.fr_mufuvi .fr-svg-inner {
+  padding-bottom: 91.80555555555556%;
+  position: relative
+}
+.fr_wawiwe {
+  float: none;
+  display: block
+}
+.fr_bepeke {
+  float: none;
+  display: block;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 1px;
+  max-width: 500px
+}
+.fr_bepeke>.fr-widget:nth-child(1n+1) {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  width: 100%;
+  clear: left;
+  max-width: inherit
+}
+.fr_muhika {
+  float: none;
+  display: block;
+  width: 100%;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 1.7em;
+  text-align: left;
+  letter-spacing: .05em;
+  margin-right: auto;
+  margin-bottom: 1em;
+  margin-left: auto;
+  color: #292c31
+}
+.fr_muhika .fr-text {
+  min-width: 100%
+}
+.fr_lokuwo {
+  float: none;
+  display: block;
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 1.1em;
+  line-height: 1.55em;
+  text-align: left;
+  margin-top: 0;
+  color: #808d99
+}
+.fr_hugode {
+  display: block;
+  padding-top: 1px;
+  max-width: 400px
+}
+.fr_hugode>.fr-widget:nth-child(2n+1) {
+  margin-top: .3em;
+  margin-right: .5%;
+  margin-bottom: .3em;
+  margin-left: 0;
+  width: 9.5%;
+  clear: left;
+  max-width: inherit
+}
+.fr_hugode>.fr-widget:nth-child(2n+2) {
+  margin-top: .3em;
+  margin-right: 0;
+  margin-bottom: .3em;
+  margin-left: .5%;
+  width: 89.5%;
+  clear: none;
+  max-width: inherit
+}
+.fr_vigace {
+  display: block;
+  padding-top: 1px;
+  max-width: 400px
+}
+.fr_vigace>.fr-widget:nth-child(2n+1) {
+  margin-top: .3em;
+  margin-right: .5%;
+  margin-bottom: .3em;
+  margin-left: 0;
+  width: 9.5%;
+  clear: left;
+  max-width: inherit
+}
+.fr_vigace>.fr-widget:nth-child(2n+2) {
+  margin-top: .3em;
+  margin-right: 0;
+  margin-bottom: .3em;
+  margin-left: .5%;
+  width: 89.5%;
+  clear: none;
+  max-width: inherit
+}
+.fr_secoki {
+  display: block;
+  padding-top: 1px;
+  max-width: 400px
+}
+.fr_secoki>.fr-widget:nth-child(2n+1) {
+  margin-top: .3em;
+  margin-right: .5%;
+  margin-bottom: .3em;
+  margin-left: 0;
+  width: 9.5%;
+  clear: left;
+  max-width: inherit
+}
+.fr_secoki>.fr-widget:nth-child(2n+2) {
+  margin-top: .3em;
+  margin-right: 0;
+  margin-bottom: .3em;
+  margin-left: .5%;
+  width: 89.5%;
+  clear: none;
+  max-width: inherit
+}
+.fr_wogugo {
+  float: none;
+  display: block;
+  width: 100%;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.35em;
+  text-align: left;
+  letter-spacing: .05em;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  color: #231f20;
+  min-height: 0
+}
+.fr_wogugo .fr-text {
+  min-width: 100%
+}
+.fr_jevece {
+  float: none;
+  display: block
+}
+.fr_hogana {
+  float: none;
+  display: block
+}
+.fr_vilodi {
+  float: none;
+  display: block;
+  width: 100%;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.35em;
+  text-align: left;
+  letter-spacing: .05em;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  color: #231f20;
+  min-height: 0
+}
+.fr_vilodi .fr-text {
+  min-width: 100%
+}
+.fr_dacani {
+  float: none;
+  display: block
+}
+.fr_gofugi {
+  float: none;
+  display: block
+}
+.fr_rubace {
+  float: none;
+  display: block;
+  width: 100%;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.35em;
+  text-align: left;
+  letter-spacing: .05em;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  color: #231f20;
+  min-height: 0
+}
+.fr_rubace .fr-text {
+  min-width: 100%
+}
+.fr_codaka .fr-svg-inner {
+  padding-bottom: 91.80555555555556%;
+  position: relative
+}
+.fr_codaka {
+  width: 17px;
+  fill: red
+}
+.fr_mubina {
+  float: none;
+  display: block;
+  width: 100%;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.35em;
+  text-align: left;
+  letter-spacing: .05em;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  color: #231f20;
+  min-height: 0
+}
+.fr_mubina .fr-text {
+  min-width: 100%
+}
+@media screen and (max-width: 1024px) {
+  .fr_loloku {
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_nafuhi {
+    float: none;
+    display: block;
+    margin-top: .7222222222222222em;
+    margin-right: auto;
+    margin-bottom: 3em;
+    margin-left: auto
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_ruhoku {
+    width: 25.260416666666668%;
+    min-height: 4.1875em
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_loloku {
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_redimi>.fr-widget:nth-child(1n+1) {
+    margin-top: 1.95em;
+    margin-right: 0;
+    margin-bottom: 1.95em;
+    margin-left: 0;
+    width: 100%;
+    clear: left;
+    max-width: inherit
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_bepeke {
+    display: block
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_boguba {
+    margin-top: 4.2em
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_ruhoku {
+    float: none;
+    display: block;
+    width: 31.25%;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 5.8583984375em
+  }
+  .fr_ruhoku>.fr-widget:nth-child(2n+1) {
+    margin-top: .6em;
+    margin-right: 1%;
+    margin-bottom: .6em;
+    margin-left: 1%;
+    width: 48%;
+    clear: left;
+    max-width: inherit
+  }
+  .fr_ruhoku>.fr-widget:nth-child(2n+2) {
+    margin-top: .6em;
+    margin-right: 1%;
+    margin-bottom: .6em;
+    margin-left: 1%;
+    width: 48%;
+    clear: none;
+    max-width: inherit
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_vifaku {
+    width: 77.77777777777779%
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_sodira {
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_wejuco {
+    width: 77.77777777777779%
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_loloku {
+    float: none;
+    display: block;
+    vertical-align: top;
+    margin-top: -2.11em;
+    margin-right: auto;
+    margin-left: auto
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_vutico {
+    float: none;
+    display: block;
+    font-size: 2.95em;
+    vertical-align: top;
+    margin-top: -1.73em;
+    margin-right: auto;
+    margin-left: auto
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_sijeda {
+    min-height: 22.625em
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_naniji {
+    display: block;
+    margin-top: 4.21em;
+    margin-left: -1.3%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_ruhoku {
+    float: none;
+    display: block;
+    width: 40.625%;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 4.625em
+  }
+  .fr_ruhoku>.fr-widget:nth-child(2n+1) {
+    margin-right: 1%;
+    margin-left: 1%;
+    width: 48%;
+    clear: left;
+    max-width: inherit
+  }
+  .fr_ruhoku>.fr-widget:nth-child(2n+2) {
+    margin-right: 1%;
+    margin-left: 1%;
+    width: 48%;
+    clear: none;
+    max-width: inherit
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_loloku {
+    float: none;
+    display: block;
+    width: 65.37500023841855%;
+    font-size: .9em;
+    line-height: 1.45em;
+    vertical-align: top;
+    margin-top: -1.7em;
+    margin-right: auto;
+    margin-left: 17.06%
+  }
+  .fr_loloku .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_vutico {
+    float: none;
+    display: block;
+    width: 90%;
+    font-size: 2.55em;
+    vertical-align: top;
+    margin-top: -2.3600000000000003em;
+    margin-right: auto;
+    margin-left: auto
+  }
+  .fr_vutico .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_naniji {
+    display: block;
+    width: 100.30761718750001%;
+    font-size: .7em;
+    vertical-align: top;
+    margin-top: 2.26em;
+    margin-left: -0.31%;
+    padding-right: 1em;
+    padding-left: 1em
+  }
+  .fr_naniji .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_nafuhi {
+    float: none;
+    display: block;
+    width: 24.052734375%;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 3.6153846153846154em
+  }
+  .fr_nafuhi .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_bepeke>.fr-widget:nth-child(1n+1) {
+    margin-right: 1%;
+    margin-left: 1%;
+    width: 98.0%;
+    clear: left;
+    max-width: inherit
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_wogugo {
+    font-size: .9em;
+    line-height: 1.45em;
+    margin-top: 0
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_vilodi {
+    font-size: .9em;
+    line-height: 1.45em;
+    margin-top: 0
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_rubace {
+    font-size: .9em;
+    line-height: 1.45em;
+    margin-top: 0
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_mubina {
+    font-size: .9em;
+    line-height: 1.45em;
+    margin-top: 0
+  }
+}
+.fr_nafuhi:hover {
+  color: white;
+  background-color: black
+}
+
+/** ******************************** **/
+/** End of widget styles             **/
+/** ******************************** **/
